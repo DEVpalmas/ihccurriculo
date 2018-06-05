@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Escola Feliz</title>
+  <title>Trabalhe Conosco - Escola Feliz</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
@@ -21,7 +21,7 @@
         <a class="nav-link" href="#">Conheça-nos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="trabalhe-conosco.html" >Trabalhe Conosco</a>
+        <a class="nav-link" href="./trabalhe-conosco.html" >Trabalhe Conosco</a>
       </li>
     </ul>
   </div>
@@ -30,9 +30,25 @@
     <br>
     <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
       <div class="col-md-6 px-0">
-        <h1 class="display-4 font-italic">Nossa escola não tem partido</h1>
-        <p class="lead my-3">Bem vindo ao novo site da escola feliz. Venha conhecer pessoalmente a nossa escola! Agende uma visita. Será um prazer conhecer você.</p>
-        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Educação: um diferencial que se leva para a vida inteira...</a></p>
+        <form class="form-inline" action="formulario.html" method="POST">
+          <div class="form-group mb-2" >
+            <label for="exampleFormControlSelect1">Vagas Disponíveis &nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="vaga">
+              <option value="portugues">Professor de Portugues</option>
+              <option value="matematica">Professor de Matematica</option>
+              <option value="ciencias">Professor de Ciências</option>
+              <option value="ingles">Professor de Inglês</option>
+              <option value="fisica">Professor de Física</option>
+              <option value="algoritimos">Professor de Algorítimos</option>
+              <option value="geografia">Professor de Geografia</option>
+              <option value="biologia">Professor de Biologia</option>
+              <option value="quimica">Professor de Química</option>
+              <option value="empreendedorismo">Professor de Empreendedorismo</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="formulario.html"><button class="btn btn-primary mb-2">Confirmar Solicitação</button></a>
+          </div>
+        </form>
       </div>
     </div>
   </div>
